@@ -11,7 +11,7 @@ print(f"Welcome to LeedsBank's savings calculator {name}!")
 try:
   amount = int(input("Enter the amount you want to save monthly: "))
   print(f"By the end of the year, you will have saved: £{amount*12}")
-  interest=amount*12*1.08
+  interest=amount*12*1.008
   print(f"With interest, you will have saved: £{round(interest, 2)}")
 except:
   print("Invalid amount")
