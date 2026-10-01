@@ -19,4 +19,4 @@ try:
     num2 = int(input("Enter a second number: "))
     print(f"Result: {num1*num2}")
 except:
-    print ("Invalid input")
+    print ("That is not a number")
