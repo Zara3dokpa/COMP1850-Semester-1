@@ -8,6 +8,7 @@
 
     Name:
 """
+import sys 
 
 def currency_converter(amount, from_currency, to_currency):
 
@@ -19,8 +20,13 @@ def currency_converter(amount, from_currency, to_currency):
     }
 
     # your code here
-
-    return None
+    if amount < 0:
+        return 0.0
+    else:
+        value = amount*conversion_rate[from_currency][to_currency]
+        value = round(value,2)
+        return value
+    
 
 # Submit only this file currency_converter.py with the completed function.
 
